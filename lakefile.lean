@@ -2,6 +2,12 @@ import Lake
 
 open Lake DSL
 
+/-!
+## BasicMathematics dependencies on upstream projects
+-/
+
+require "leanprover-community" / "mathlib" @ git "master"
+
 abbrev linters : Array LeanOption := #[
   ⟨`linter.allScriptsDocumented, true⟩,
   ⟨`linter.checkInitImports, true⟩,
